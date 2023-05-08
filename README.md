@@ -1,5 +1,4 @@
 # Super Cashier
-
 # Table of Contents
 - [Super Cashier](#super-cashier)
 - [Table of Contents](#table-of-contents)
