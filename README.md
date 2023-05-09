@@ -55,7 +55,7 @@ Andi adalah seorang pemilik supermarket besar di salah satu kota di Indonesia. A
 [Back to Table of Contents ⬆️](#table-of-contents)
 
 ## Flowchart
-![Flowchart](./images/SuperCashier_flowchart.png "SuperCashier Flowchart")
+<img src="./images/SuperCashier_flowchart.png" style="width:100%;height:auto" alt="Super Cashier Flowchart">
 
 [Back to Table of Contents ⬆️](#table-of-contents)
 
