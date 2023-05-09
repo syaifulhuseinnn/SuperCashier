@@ -1,8 +1,8 @@
 # Super Cashier
+Super Cashier is a Final Project as part of Software and Data Engineering course in PACMANN.
 # Table of Contents
 - [Super Cashier](#super-cashier)
 - [Table of Contents](#table-of-contents)
-	- [Description](#description)
 	- [Background](#background)
 	- [Requirements](#requirements)
 	- [Flowchart](#flowchart)
@@ -10,8 +10,6 @@
 	- [Test Case Results](#test-case-results)
 	- [Conclusion](#conclusion)
 
-## Description
-Super Cashier is a Final Project as part of Software and Data Engineering course in PACMANN.
 
 [Back to Table of Contents ⬆️](#table-of-contents)
 
@@ -57,7 +55,7 @@ Andi adalah seorang pemilik supermarket besar di salah satu kota di Indonesia. A
 [Back to Table of Contents ⬆️](#table-of-contents)
 
 ## Flowchart
-![Flowchart](images/SuperCashier_flowchart.png "SuperCashier Flowchart")
+![Flowchart](./images/SuperCashier_flowchart.png "SuperCashier Flowchart")
 
 [Back to Table of Contents ⬆️](#table-of-contents)
 
