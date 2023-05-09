@@ -1,5 +1,5 @@
 # Super Cashier
-Super Cashier is a Final Project as part of Software and Data Engineering course in PACMANN.
+Super Cashier is a Final Project as part of Software and Data Engineering course in PACMANN. This project for **Introduction to Software and Data Engineering with Python I & II** modules.
 # Table of Contents
 - [Super Cashier](#super-cashier)
 - [Table of Contents](#table-of-contents)
