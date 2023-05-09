@@ -27,12 +27,12 @@ Andi adalah seorang pemilik supermarket besar di salah satu kota di Indonesia. A
 2. Customer dapat memasukkan nama item, jumlah item, dan harga item
    - Masukkan item yang ingin dibeli: `add_item([<nama item>, <jumlah item>, <harga per item>])`
 3. Jika customer salah memasukkan nama item atau jumlah item atau harga item tetapi tidak ingin menghapusnya, customer dapat melakukan:
-   1.  Update nama item dengan method: `update_item_name(<nama item>, <update nama item>)`
-   2.  Update jumlah item: `update_item_qty(<nama_item>, <update jumlah item>)`
-   3.  Update harga item: `update_item_price(<nama_item>, <update harga item>)`
+   -  Update nama item dengan method: `update_item_name(<nama item>, <update nama item>)`
+   -  Update jumlah item: `update_item_qty(<nama_item>, <update jumlah item>)`
+   -  Update harga item: `update_item_price(<nama_item>, <update harga item>)`
 4. Jika customer batal membeli, customer dapat melakukan: 
-   1. Menghapus salah satu item: `delete_item(<nama item>)`
-   2. Menghapus semua transaksi sekaligus atau reset transaksi: `reset_transaction()`
+   - Menghapus salah satu item: `delete_item(<nama item>)`
+   - Menghapus semua transaksi sekaligus atau reset transaksi: `reset_transaction()`
 5. Customer sudah selesai dengan berbelanja online nya, tetapi Customer masih ragu apakah harga barang dan nama barang yang diinput sudah benar. Bisa saja Customer melakukan kesalahan dalam melakukan input, semisal sudah melakukan input harga barang tetapi lupa untuk input nama barangnya. Andi bisa menggunakan method `check_order()`. Terdapat ketentuan:
    - Akan mengeluarkan pesan “Pemesanan sudah benar” (bebas bisa dengan message yang lain) jika tidak ada kesalahan input
    - Akan mengeluarkan pesan “Terdapat kesalahan input data” jika terjadi kesalahan input
