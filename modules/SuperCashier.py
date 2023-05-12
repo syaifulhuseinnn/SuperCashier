@@ -6,6 +6,7 @@ class SuperCashier:
     def __init__(self):
         self.transaction_id = ""
         self.items = []
+        self.order = []
         self.user_option = 0
 
     def get_index(self, key, value):
@@ -195,13 +196,15 @@ class SuperCashier:
         print("=" * 40)
         print("Check Order")
 
+        self.order = [item for item in self.items]
+
         # Check discount
-        for i in range(len(self.items)):
-            self.items[i]["price_after_discount"] = self.check_discount(
-                self.items[i]["total_price"])
+        for i in range(len(self.order)):
+            self.order[i]["price_after_discount"] = self.check_discount(
+                self.order[i]["total_price"])
 
         # Show order details
-        print(json.dumps(self.items, indent=4))
+        print(json.dumps(self.order, indent=4))
 
         # Reset user option
         self.user_option = 0
