@@ -60,6 +60,124 @@ Andi adalah seorang pemilik supermarket besar di salah satu kota di Indonesia. A
 [Back to Table of Contents ⬆️](#table-of-contents)
 
 ## Code Explanation
+Pada project ini saya menggunakan paradigma Object Oriented Programming. Script saya bagi menjadi modular code.
+
+1. Script `SuperCashier.py` adalah sebuah class dengan beberapa method didalamnya.
+   - `__init__`
+   ```python
+	def __init__(self):
+        """
+        Initializes a new instance of the SuperCashier class.
+        """
+	 ```
+	 - `menus`
+	```python
+	def menus(self):
+        """
+        Displays the available menu options.
+        """
+	```
+	- `transaction`
+	```python
+	def transaction(self):
+        """
+        Sets the transaction ID.
+        """
+	```
+	- `add_item`
+	```python
+	def add_item(self, item_name, item_quantity, item_price):
+        """
+        Adds an item to the order.
+
+        Args:
+            item_name (str): The name of the item.
+            item_quantity (int): The quantity of the item.
+            item_price (int): The price of the item.
+        """
+	```
+	- `update_item_name`
+	```python
+	def update_item_name(self, old_item_name, new_item_name):
+        """
+        Updates the name of an item in the order.
+
+        Args:
+            old_item_name (str): The current name of the item.
+            new_item_name (str): The new name for the item.
+        """
+	```
+	- `update_item_qty`
+	```python
+	def update_item_qty(self, item_name, new_item_qty):
+        """
+        Updates the quantity of an item in the order.
+
+        Args:
+            item_name (str): The name of the item.
+            new_item_qty (int): The new quantity for the item.
+        """
+	```
+	- `update_item_price`
+	```python
+	def update_item_price(self, item_name, new_item_price):
+        """
+        Updates the price of an item in the order.
+
+        Args:
+            item_name (str): The name of the item.
+            new_item_price (int): The new price for the item.
+        """
+	```
+	- `delete_item`
+	```python
+	def delete_item(self, item_name):
+        """
+        Deletes an item from the order.
+
+        Args:
+            item_name (str): The name of the item to delete.
+        """
+	```
+	- `reset_transaction`
+	```python
+	def reset_transaction(self):
+        """
+        Resets the transaction by clearing the items in the order.
+        """
+	```
+	- `check_order`
+	```python
+	def check_order(self):
+        """
+        Displays the items in the current order.
+        """
+	```
+	- `check_out`
+	```python
+	def check_out(self):
+        """
+        Processes the checkout by calculating the total price, applying
+        discounts, and inserting the transaction into the database.
+				Returns:
+        bool: False if item is empty
+        """
+	```
+	- `check_discount`
+	```python
+	def check_discount(self, total_price):
+        """
+        Checks if a discount is applicable based on the total price.
+
+        Args:
+            total_price (int): The total price of the items.
+
+        Returns:
+            dict or bool: A dictionary containing the discount and the total
+            price after discount, or False if no discount is applicable.
+        """
+	```
+
 [Back to Table of Contents ⬆️](#table-of-contents)
 
 ## Test Case Results
