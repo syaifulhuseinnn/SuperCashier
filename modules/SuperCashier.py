@@ -351,7 +351,7 @@ class SuperCashier:
         discounts, and inserting the transaction into the database.
 
         Returns:
-        bool: False if item is empty
+            bool: False if item is empty.
         """
 
         print("=" * 40)

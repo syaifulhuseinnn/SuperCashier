@@ -159,8 +159,9 @@ Pada project ini saya menggunakan paradigma Object Oriented Programming. Script 
         """
         Processes the checkout by calculating the total price, applying
         discounts, and inserting the transaction into the database.
-				Returns:
-        bool: False if item is empty
+
+        Returns:
+            bool: False if item is empty.
         """
 	```
 	- `check_discount`
@@ -177,6 +178,115 @@ Pada project ini saya menggunakan paradigma Object Oriented Programming. Script 
             price after discount, or False if no discount is applicable.
         """
 	```
+	- `insert_to_table`
+	```python
+	def insert_to_table(self):
+        """
+        Inserts the transaction details into the database.
+        """
+	```
+2. Script `helpers.py` adalah script yang berisi fungsi-fungsi pembantu yang bisa digunakan berulang-ulang.
+   - `currency_conversion`
+	```python
+	def currency_conversion(number):
+    """
+    Formatting number into IDR currency format
+    Args:
+        number: price in integer
+    Returns:
+        Formatted Price: Integer price in IDR currency format
+        None: if args type is not integer will return None
+    """
+    if type(number) is int:
+        formatted_price = format_currency(number, "IDR", locale='id_ID')
+        formatted_price = formatted_price.replace(",00", "")
+        return formatted_price
+    return number
+	```
+   - `get_index`
+	```python
+	def get_index(items, key, value):
+    """
+    Get index of list of dictionary
+    Args:
+        items: list of dictionary
+        key: key of dictionary
+        value: value of dictionary
+    Returns:
+        index: Index number of item
+        -1: if item isn't available in list
+    """
+    for i in range(len(items)):
+        if items[i][key].lower() == value.lower():
+            return i
+    return -1
+	```
+
+3. Script `main.py` adalah script yang akan dieksekusi. Didalamnya terdapat pemanggilan class `SuperCashier` dan branching.
+   ```python
+	 from modules.SuperCashier import *
+
+	 # A flag sign program is running
+     super_cashier_is_running = True
+
+     # Create new instance of SuperCashier class
+     sc = SuperCashier()
+
+     # Customer create Transaction ID
+     sc.transaction()
+
+     while super_cashier_is_running:
+         # Show all menu
+         sc.menus()
+     
+         # Access 'user_option' attribute class
+         user_option = sc.user_option
+     
+         # Branching menu
+         if user_option == 0:
+             print("> Pilihan menu yang anda masukkan tidak tersedia!")
+         elif user_option == 1:
+             # Customer add item
+             item_name = input("Masukkan nama item: ")
+             item_quantity = input("Masukkan jumlah item: ")
+             item_price = input("Masukkan harga item: ")
+     
+             sc.add_item(item_name, item_quantity, item_price)
+         elif user_option == 2:
+             # Customer update item name
+             old_item_name = input("Masukkan nama item yang ingin diubah: ")
+             new_item_name = input("Masukkan nama item yang baru: ")
+     
+             sc.update_item_name(old_item_name, new_item_name)
+         elif user_option == 3:
+             # Customer update item quantity
+             item_name = input("Masukkan nama item yang ingin diubah jumlahnya: ")
+             new_item_qty = input("Masukkan jumlah item yang baru: ")
+     
+             sc.update_item_qty(item_name, new_item_qty)
+         elif user_option == 4:
+             # Customer update item price
+             item_name = input("Masukkan nama item yang ingin diubah harganya: ")
+             new_item_price = input("Masukkan harga item yang baru: ")
+     
+             sc.update_item_price(item_name, new_item_price)
+         elif user_option == 5:
+             # Customer menghapus item
+             item_name = input("Masukkan nama item yang ingin dihapus: ")
+     
+             sc.delete_item(item_name)
+         elif user_option == 6:
+             # Customer reset transaksi
+             sc.reset_transaction()
+         elif user_option == 7:
+             # Customer cek order
+             sc.check_order()
+         else:
+             check_out = sc.check_out()
+             if check_out is not False:
+                 super_cashier_is_running = False
+     
+	 ```
 
 [Back to Table of Contents ⬆️](#table-of-contents)
 
