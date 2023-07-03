@@ -1,8 +1,6 @@
-# Super Cashier
-Super Cashier is a Final Project as part of Software and Data Engineering course in PACMANN. This project for **Introduction to Software and Data Engineering with Python I & II** modules.
 # Table of Contents
-- [Super Cashier](#super-cashier)
 - [Table of Contents](#table-of-contents)
+- [Super Cashier](#super-cashier)
 - [How to Install](#how-to-install)
 	- [Background](#background)
 	- [Requirements](#requirements)
@@ -13,6 +11,8 @@ Super Cashier is a Final Project as part of Software and Data Engineering course
 
 
 [Back to Table of Contents ⬆️](#table-of-contents)
+# Super Cashier
+Super Cashier is a Final Project as part of Software and Data Engineering course in PACMANN. This project for **Introduction to Software and Data Engineering with Python I & II** modules.
 
 # How to Install
 1. Clone project using git. Put this command into your terminal or CMD:
@@ -41,6 +41,9 @@ Super Cashier is a Final Project as part of Software and Data Engineering course
 	 conda activate <env_name>
 	 ```
 5. Then, execute `main.py` file.
+
+[Back to Table of Contents ⬆️](#table-of-contents)
+
 
 ## Background
 Andi adalah seorang pemilik supermarket besar di salah satu kota di Indonesia. Andi memiliki rencana untuk melakukan perbaikan proses bisnis, yaitu Andi akan membuat sistem kasir yang self-service di supermarket miliknya dengan harapan 
@@ -320,6 +323,9 @@ Pada project ini saya menggunakan paradigma Object Oriented Programming. Script 
 [Back to Table of Contents ⬆️](#table-of-contents)
 
 ## Test Case Results
+1. Case 1: Add item
+![Case 1](./images/Test_1_add_item.gif "Add item")
+   
 [Back to Table of Contents ⬆️](#table-of-contents)
 
 ## Conclusion
