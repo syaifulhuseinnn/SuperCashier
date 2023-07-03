@@ -350,4 +350,7 @@ Pada project ini saya menggunakan paradigma Object Oriented Programming. Script 
 [Back to Table of Contents ⬆️](#table-of-contents)
 
 ## Conclusion
+Di proyek ini saya sudah mulai familiar dengan fitur yang ada di Python. Mulai dari penggunaan List, List of Dictionary, Tuple, String method, dan lainnya. Serta saya sudah mengimplentasikan paradigma OOP di proyek ini.
+Jika ada waktu lebih banyak, fitur yang ingin saya tambahkan adalah user interface karena ini adalah aplikasi kasir maka lebih baik dibangun dengan keadaan user sebenarnya menggunakan mesin kasir. Serta penambahan fitur add voucher untuk mendapat diskon/cashback.
+
 [Back to Table of Contents ⬆️](#table-of-contents)
