@@ -323,8 +323,29 @@ Pada project ini saya menggunakan paradigma Object Oriented Programming. Script 
 [Back to Table of Contents ⬆️](#table-of-contents)
 
 ## Test Case Results
-1. Case 1: Add item
+1. Add item
 ![Case 1](./images/Test_1_add_item.gif "Add item")
+
+2. Update item name
+![Case 2](./images/update_item_name.gif "Update item name")
+
+3. Update item quantity
+![Case 3](./images/update_item_quantity.gif "Update item quantity")
+
+4. Update item price
+![Case 4](./images/update_item_price.gif "Update item price")
+
+5. Delete item
+![Case 5](./images/delete_item.gif "Delete item")
+
+6. Reset transaction
+![Case 6](./images/reset.gif "Reset transaction")
+
+7. Check order
+![Case 7](./images/check_order.gif "Check order")
+
+8. Check Out
+![Case 8](./images/check_out.gif "Check Out")
    
 [Back to Table of Contents ⬆️](#table-of-contents)
 
