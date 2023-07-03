@@ -1,7 +1,7 @@
 # Table of Contents
 - [Table of Contents](#table-of-contents)
 - [Super Cashier](#super-cashier)
-- [How to Install](#how-to-install)
+	- [How to Install](#how-to-install)
 	- [Background](#background)
 	- [Requirements](#requirements)
 	- [Flowchart](#flowchart)
@@ -14,7 +14,7 @@
 # Super Cashier
 Super Cashier is a Final Project as part of Software and Data Engineering course in PACMANN. This project for **Introduction to Software and Data Engineering with Python I & II** modules.
 
-# How to Install
+## How to Install
 1. Clone project using git. Put this command into your terminal or CMD:
    ```shell
 	git clone https://github.com/syaifulhuseinnn/SuperCashier.git
@@ -350,7 +350,7 @@ Pada project ini saya menggunakan paradigma Object Oriented Programming. Script 
 [Back to Table of Contents ⬆️](#table-of-contents)
 
 ## Conclusion
-Di proyek ini saya sudah mulai familiar dengan fitur yang ada di Python. Mulai dari penggunaan List, List of Dictionary, Tuple, String method, dan lainnya. Serta saya sudah mengimplentasikan paradigma OOP di proyek ini.
-Jika ada waktu lebih banyak, fitur yang ingin saya tambahkan adalah user interface karena ini adalah aplikasi kasir maka lebih baik dibangun dengan keadaan user sebenarnya menggunakan mesin kasir. Serta penambahan fitur add voucher untuk mendapat diskon/cashback.
+In this project I have learned many things. I'm starting familiar with features in Python. I have implemented List, Dictionary, List of Dictionary, Tuple, Looping, Branching, and also Object-Oriented Programming. Even I already understood about differences between virtual environment such as Conda with Pip.
+If I have more time, I want to update this project to REST API form. My goal is make it agnostic, so if I or someone want to add user interface in the future, we can create the interface using various technologies, no matter is it Python or not.
 
 [Back to Table of Contents ⬆️](#table-of-contents)
