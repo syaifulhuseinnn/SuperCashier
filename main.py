@@ -45,15 +45,15 @@ while super_cashier_is_running:
 
         sc.update_item_price(item_name, new_item_price)
     elif user_option == 5:
-        # Customer menghapus item
+        # Customer delete item
         item_name = input("Masukkan nama item yang ingin dihapus: ")
 
         sc.delete_item(item_name)
     elif user_option == 6:
-        # Customer reset transaksi
+        # Customer reset transaction
         sc.reset_transaction()
     elif user_option == 7:
-        # Customer cek order
+        # Customer check order
         sc.check_order()
     else:
         check_out = sc.check_out()
